@@ -1,8 +1,10 @@
+import background from "../assets/images/EKn3yBvU8AM_Dd8.jpg"
+import { Started } from "../components/started"
 export const Main=()=>{
     return (
         <main className="px-12">
         <div className="relative bg-cover bg-center bg-no-repeat rounded-3xl h-[30rem] flex flex-col items-center justify-center text-wrap"
-            style={{ backgroundImage: "url('./EKn3yBvU8AM_Dd8.jpg')" }}>
+            style={{ backgroundImage: `url(${background})` }}>
 
             <div className="absolute inset-0 bg-black/60 rounded-3xl h-[30rem]"></div>
 
@@ -19,14 +21,7 @@ export const Main=()=>{
                 <span>
                     Ready to watch? Enter your email to create or restart your membership.
                 </span>
-                <div className="grid grid-rows-2 gap-6 md:grid-cols-2">
-                    <input type="email"
-                        className="bg-gray-700/90 placeholder-gray300 rounded-full text-2xl px-6 py-2 outline-white text-white placeholder:text-sm "
-                        placeholder="Email address"/>
-                    <button
-                        className="bg-[#e50914] px-6 py-2 text-2xl font-bold rounded-full whitespace-nowrap hover:bg-red-600 w-fit">Get
-                        Started {'>'} </button>
-                </div>
+               <Started/>
             </div>
 
         </div>
@@ -36,27 +31,27 @@ export const Main=()=>{
             <div className="flex py-5 px-8">
 
                 <div className="bg-center bg-no-repeat h-64 w-40 rounded-lg transform transition-transform duration-300 hover:scale-110 mr-10"
-                    style={{ backgroundImage: "url('./EKn3yBvU8AM_Dd8.jpg')" }}>
+                    style={{ backgroundImage:  `url(${background})` }}>
                     <span className="text-white  text-3xl font-bold px-2 py-1">1</span>
                 </div>
                 <div className="bg-center bg-no-repeat h-64 w-40 rounded-lg transform transition-transform duration-300 hover:scale-110 mr-10"
-                    style={{ backgroundImage: "url('./EKn3yBvU8AM_Dd8.jpg')" }}>
+                    style={{ backgroundImage:  `url(${background})` }}>
                     <span className="text-white  text-3xl font-bold px-2 py-1">2</span>
                 </div>
                 <div className="bg-center bg-no-repeat h-64 w-40 rounded-lg transform transition-transform duration-300 hover:scale-110 mr-10"
-                    style={{ backgroundImage: "url('./EKn3yBvU8AM_Dd8.jpg')" }}>
+                    style={{ backgroundImage:  `url(${background})` }}>
                     <span className="text-white  text-3xl font-bold px-2 py-1">3</span>
                 </div>
                 <div className="bg-center bg-no-repeat h-64 w-40 rounded-lg transform transition-transform duration-300 hover:scale-110 mr-10"
-                    style={{ backgroundImage: "url('./EKn3yBvU8AM_Dd8.jpg')" }}>
+                    style={{ backgroundImage:  `url(${background})` }}>
                     <span className="text-white  text-3xl font-bold px-2 py-1">4</span>
                 </div>
                 <div className="bg-center bg-no-repeat h-64 w-40 rounded-lg transform transition-transform duration-300 hover:scale-110 mr-10"
-                    style={{ backgroundImage: "url('./EKn3yBvU8AM_Dd8.jpg')" }}>
+                    style={{ backgroundImage:  `url(${background})` }}>
                     <span className="text-white  text-3xl font-bold px-2 py-1">5</span>
                 </div>
                 <div className="bg-center bg-no-repeat h-64 w-40 rounded-lg transform transition-transform duration-300 hover:scale-110 mr-10"
-                    style={{ backgroundImage: "url('./EKn3yBvU8AM_Dd8.jpg')" }}>
+                    style={{ backgroundImage:  `url(${background})` }}>
                     <span className="text-white  text-3xl font-bold px-2 py-1">6</span>
                 </div>
             </div>
