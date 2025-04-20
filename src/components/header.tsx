@@ -1,4 +1,5 @@
 import logo from '../assets/images/Netflix-logo.png'
+import { NavLink } from 'react-router-dom'
 export const Header = () => {
     return (
         <header className="px-6">
@@ -9,9 +10,9 @@ export const Header = () => {
                 </div>
 
                 <div>
-                    <button
-                        className="bg-white text-black text-sm px-4 py-2  rounded-full font-bold hover:bg-gray-200 whitespace-nowrap">Sign
-                        In</button>
+                    <NavLink
+                        className="bg-white text-black text-sm px-4 py-2  rounded-full font-bold hover:bg-gray-200 whitespace-nowrap" to={'/signup'}>Sign
+                        In</NavLink>
                 </div>
             </nav>
         </header>

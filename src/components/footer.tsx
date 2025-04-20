@@ -11,41 +11,41 @@ export const Footer = () => {
                     <Started />
 
                 </div>
-                <a href="www.ggogle.com" className="underline">Questions? Contact us.</a>
+                <a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer" className="underline">Questions? Contact us.</a>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 my-12 underline">
                     <div>
                         <ul>
-                            <li className="py-2"><a href="www.ggogle.com">FAQ</a></li>
-                            <li className="py-2"><a href="www.ggogle.com">Investor Relations</a></li>
-                            <li className="py-2"><a href="www.ggogle.com">Privacy</a></li>
-                            <li className="py-2"><a href="www.ggogle.com">Speed Test</a></li>
+                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">FAQ</a></li>
+                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Investor Relations</a></li>
+                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Privacy</a></li>
+                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Speed Test</a></li>
 
                         </ul>
                     </div>
                     <div>
                         <ul>
-                            <li className="py-2"><a href="www.ggogle.com">Help Center</a></li>
-                            <li className="py-2"><a href="www.ggogle.com">Jobs</a></li>
-                            <li className="py-2"><a href="www.ggogle.com">Cookie Preferences</a></li>
-                            <li className="py-2"><a href="www.ggogle.com">Legal Notices</a></li>
+                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Help Center</a></li>
+                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Jobs</a></li>
+                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Cookie Preferences</a></li>
+                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Legal Notices</a></li>
                         </ul>
                     </div>
                     <div>
                         <ul>
-                            <li className="py-2"><a href="www.ggogle.com">Account</a></li>
-                            <li className="py-2"><a href="www.ggogle.com">Ways to Watch</a></li>
-                            <li className="py-2"><a href="www.ggogle.com">Corporate Information</a></li>
-                            <li className="py-2"><a href="www.ggogle.com">Only on Netflix</a></li>
+                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Account</a></li>
+                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Ways to Watch</a></li>
+                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Corporate Information</a></li>
+                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Only on Netflix</a></li>
 
 
                         </ul>
                     </div>
                     <div>
                         <ul>
-                            <li className="py-2"><a href="www.ggogle.com">Media Center</a></li>
-                            <li className="py-2"><a href="www.ggogle.com">Terms of Use</a></li>
-                            <li className="py-2"><a href="www.ggogle.com">Contact Us</a></li>
+                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Media Center</a></li>
+                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Terms of Use</a></li>
+                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
