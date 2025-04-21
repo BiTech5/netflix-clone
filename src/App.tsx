@@ -9,7 +9,7 @@ function App() {
     <div className="bg-gradient-to-b from-black via-[#8b003d] to-[#2a0000] min-h-screen">
       <Header />
       <Routes>
-        <Route path='/' element={<Main/>}/>
+        <Route path='/netflix-clone' element={<Main/>}/>
         <Route path='/signup' element={<SignUp/>}/>
       </Routes>
       <Footer />

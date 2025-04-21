@@ -9,7 +9,7 @@ export const Header = () => {
     return (
         <header className="px-4 sm:px-6 py-4">
             <nav className="flex justify-between items-center max-w-7xl mx-auto">
-                <NavLink to="/">
+                <NavLink to="/netflix-clone">
 
                     <div>
                         <img src={logo} alt="Netflix Logo" className="w-32 sm:w-40 hidden md:block" />
