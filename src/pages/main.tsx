@@ -1,6 +1,8 @@
 import background from "../assets/images/EKn3yBvU8AM_Dd8.jpg"
 import { Started } from "../components/started"
 import { SideScroll } from "../components/sidescrool"
+import { Question } from "../components/questions"
+import { Boxes } from "../components/boxes"
 export const Main = () => {
     return (
         <main className="px-12">
@@ -28,77 +30,8 @@ export const Main = () => {
             </div>
 
             <SideScroll />
-            <div className="text-white font-bold text-4xl px-12 py-6">
-                More Reasons to Join
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 ">
-                    <div className="bg-black/50 w-full max-w-xs p-6 rounded-lg mr-10">
-                        <h1 className="text-2xl font-bold mb-2">Enjoy on your TV</h1>
-                        <p className="text-sm text-white/70">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
-                            Blu-ray players, and
-                            more.</p>
-                        <i className="fa fa-desktop text-red-500 float-right" aria-hidden="true"></i>
-
-                    </div>
-                    <div className="bg-black/50 w-full max-w-xs p-6 rounded-lg mr-10">
-                        <h1 className="text-2xl font-bold mb-2">Enjoy on your TV</h1>
-                        <p className="text-sm text-white/70">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
-                            Blu-ray players, and
-                            more.</p>
-                        <i className="fa fa-arrow-circle-down text-red-500 float-right" aria-hidden="true"></i>
-
-                    </div>
-                    <div className="bg-black/50 w-full max-w-xs p-6 rounded-lg mr-10">
-                        <h1 className="text-2xl font-bold mb-2">Enjoy on your TV</h1>
-                        <p className="text-sm text-white/70">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
-                            Blu-ray players, and
-                            more.</p>
-                        <i className="fa fa-mobile float-right text-red-500" aria-hidden="true"></i>
-
-                    </div>
-                    <div className="bg-black/50 w-full max-w-xs p-6 rounded-lg mr-10">
-                        <h1 className="text-2xl font-bold mb-2">Enjoy on your TV</h1>
-                        <p className="text-sm text-white/70">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
-                            Blu-ray players, and
-                            more.</p>
-                        <i className="fa fa-users float-right text-red-500" aria-hidden="true"></i>
-
-                    </div>
-                </div>
-
-            </div>
-            <div className="text-white font-bold text-4xl px-12 py-6">
-                Frequently Asked Questions
-                <button
-                    className="bg-black/50 rounded-2xl my-6 w-full p-4 text-2xl text-left flex justify-between items-center hover:bg-white/20 transition duration-700 ease-in-out">
-                    <span>What is Netflix?</span>
-                    <span>+</span>
-                </button>
-                <button
-                    className="bg-black/50 rounded-2xl my-6 w-full p-4 text-2xl text-left flex justify-between items-center hover:bg-white/20 transition duration-700 ease-in-out">
-                    <span>How much does Netflix cost?</span>
-                    <span>+</span>
-                </button>
-                <button
-                    className="bg-black/50 rounded-2xl my-6 w-full p-4 text-2xl text-left flex justify-between items-center hover:bg-white/20 transition duration-700 ease-in-out">
-                    <span>Where can I watch?</span>
-                    <span>+</span>
-                </button>
-                <button
-                    className="bg-black/50 rounded-2xl my-6 w-full p-4 text-2xl text-left flex justify-between items-center hover:bg-white/20 transition duration-700 ease-in-out">
-                    <span>How do I cancel?</span>
-                    <span>+</span>
-                </button>
-                <button
-                    className="bg-black/50 rounded-2xl my-6 w-full p-4 text-2xl text-left flex justify-between items-center hover:bg-white/20 transition duration-700 ease-in-out">
-                    <span>What can I watch on Netflix?</span>
-                    <span>+</span>
-                </button>
-                <button
-                    className="bg-black/50 rounded-2xl my-6 w-full p-4 text-2xl text-left flex justify-between items-center hover:bg-white/20 transition duration-700 ease-in-out">
-                    <span>Is Netflix good for kids?</span>
-                    <span>+</span>
-                </button>
-            </div>
+            <Boxes />
+            <Question />
         </main>
     )
 }
