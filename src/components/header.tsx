@@ -9,10 +9,13 @@ export const Header = () => {
     return (
         <header className="px-4 sm:px-6 py-4">
             <nav className="flex justify-between items-center max-w-7xl mx-auto">
-                <div>
-                    <img src={logo} alt="Netflix Logo" className="w-32 sm:w-40 hidden md:block" />
-                    <img src={smlogo} alt="Netflix Logo Small" className="w-8 sm:w-10 block md:hidden" />
-                </div>
+                <NavLink to="/">
+
+                    <div>
+                        <img src={logo} alt="Netflix Logo" className="w-32 sm:w-40 hidden md:block" />
+                        <img src={smlogo} alt="Netflix Logo Small" className="w-8 sm:w-10 block md:hidden" />
+                    </div>
+                </NavLink>
 
                 <div>
                     <NavLink
