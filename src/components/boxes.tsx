@@ -2,7 +2,7 @@ export const Boxes =()=>{
     return(
         <div className="text-white font-bold text-4xl px-12 py-6">
             More Reasons to Join
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 ">
+            <div className="my-4 grid grid-cols-1 md:grid-cols-4 gap-8 ">
             {[
                 {
                 title: "Enjoy on your TV",
