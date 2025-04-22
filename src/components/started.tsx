@@ -7,7 +7,7 @@ export const Started = () => {
                 placeholder="Email address"
             />
             <button
-                className="bg-[#e50914] px-4 sm:px-6 py-2 text-base sm:text-lg md:text-2xl font-bold rounded-full whitespace-nowrap hover:bg-red-600 w-full sm:w-fit">
+                className="bg-[#e50914] px-4 sm:px-6 py-2 text-base sm:text-lg md:text-2xl font-bold rounded-full whitespace-nowrap hover:bg-red-600 w-full sm:w-fit ">
                 Get Started {'>'}
             </button>
         </div>

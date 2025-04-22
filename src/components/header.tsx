@@ -1,11 +1,8 @@
 import logo from '../assets/images/Netflix-logo.png'
 import { NavLink } from 'react-router-dom'
 import smlogo from "../assets/images/sm-logo.png"
-import { useEffect } from 'react'
 export const Header = () => {
-    useEffect(() => {
-        document.title = "Netflix clone"
-    }, []);
+    
     return (
         <header className="px-4 sm:px-6 py-4">
             <nav className="flex justify-between items-center max-w-7xl mx-auto">
