@@ -1,55 +1,60 @@
-import { Started } from "./started"
+import { Started } from "./started";
+
 export const Footer = () => {
     return (
-        <footer className="bg-black text-white/70  px-12">
-            <div className="px-12 py-6">
-                <div className="text-white w-full flex flex-col items-center gap-6">
-
-                    <span className="no-underline">
-                        Ready to watch? Enter your email to create or restart your membership.
-                    </span>
+        <footer className="bg-neutral text-neutral-content">
+            <div className="w-full flex flex-col items-center justify-center px-4 py-8 text-center">
+                <p className="mb-4 text-lg">
+                    Ready to watch? Enter your email to create or restart your membership.
+                </p>
+                <div className="w-full max-w-xl">
                     <Started />
-
-                </div>
-                <a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer" className="underline">Questions? Contact us.</a>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 my-12 underline">
-                    <div>
-                        <ul>
-                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">FAQ</a></li>
-                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Investor Relations</a></li>
-                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Privacy</a></li>
-                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Speed Test</a></li>
-
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Help Center</a></li>
-                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Jobs</a></li>
-                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Cookie Preferences</a></li>
-                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Legal Notices</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Account</a></li>
-                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Ways to Watch</a></li>
-                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Corporate Information</a></li>
-                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Only on Netflix</a></li>
-
-
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Media Center</a></li>
-                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Terms of Use</a></li>
-                            <li className="py-2"><a href="https://github.com/BiTech5" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
+
+            <div className="footer sm:footer-horizontal grid-rows-2 p-10">
+                <nav>
+                    <h6 className="footer-title">Services</h6>
+                    <a className="link link-hover" href="https://github.com/BiTech5">Branding</a>
+                    <a className="link link-hover" href="https://github.com/BiTech5">Design</a>
+                    <a className="link link-hover" href="https://github.com/BiTech5">Marketing</a>
+                    <a className="link link-hover" href="https://github.com/BiTech5">Advertisement</a>
+                </nav>
+                <nav>
+                    <h6 className="footer-title">Company</h6>
+                    <a className="link link-hover" href="https://github.com/BiTech5">About us</a>
+                    <a className="link link-hover" href="https://github.com/BiTech5">Contact</a>
+                    <a className="link link-hover" href="https://github.com/BiTech5">Jobs</a>
+                    <a className="link link-hover" href="https://github.com/BiTech5">Press kit</a>
+                </nav>
+                <nav>
+                    <h6 className="footer-title">Legal</h6>
+                    <a className="link link-hover" href="https://github.com/BiTech5">Terms of use</a>
+                    <a className="link link-hover" href="https://github.com/BiTech5">Privacy policy</a>
+                    <a className="link link-hover" href="https://github.com/BiTech5">Cookie policy</a>
+                </nav>
+                <nav>
+                    <h6 className="footer-title">Social</h6>
+                    <a className="link link-hover" href="https://github.com/BiTech5">Twitter</a>
+                    <a className="link link-hover" href="https://github.com/BiTech5">Instagram</a>
+                    <a className="link link-hover" href="https://github.com/BiTech5">Facebook</a>
+                    <a className="link link-hover" href="https://github.com/BiTech5">GitHub</a>
+                </nav>
+                <nav>
+                    <h6 className="footer-title">Explore</h6>
+                    <a className="link link-hover" href="https://github.com/BiTech5">Features</a>
+                    <a className="link link-hover" href="https://github.com/BiTech5">Enterprise</a>
+                    <a className="link link-hover" href="https://github.com/BiTech5">Security</a>
+                    <a className="link link-hover" href="https://github.com/BiTech5">Pricing</a>
+                </nav>
+                <nav>
+                    <h6 className="footer-title">Apps</h6>
+                    <a className="link link-hover" href="https://github.com/BiTech5">Mac</a>
+                    <a className="link link-hover" href="https://github.com/BiTech5">Windows</a>
+                    <a className="link link-hover" href="https://github.com/BiTech5">iPhone</a>
+                    <a className="link link-hover" href="https://github.com/BiTech5">Android</a>
+                </nav>
+            </div>
         </footer>
-    )
-}
+    );
+};
