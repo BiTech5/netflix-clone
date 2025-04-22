@@ -1,4 +1,39 @@
-# Getting Started with Create React App
+# 🎬 Netflix Clone
+
+A responsive **Netflix UI Clone** built using **React** and **TypeScript**, styled with **Tailwind CSS**. This project is focused on frontend development and recreating the look and feel of Netflix using static data (no backend or API integration).
+
+---
+
+## 🚀 Features
+
+- ✅ Built with **React + TypeScript**
+- 🎨 Styled using **Tailwind CSS**
+- 📱 Fully **Responsive Design**
+- 📂 Clean and modular file structure
+
+
+---
+
+## 📁 Folder Structure
+ netflix-clone/ <br/>
+├── public/ <br/>
+│   └── favicon.svg  <br/>
+│   <br/>
+├── src/
+│   ├── assets/       &emsp;-      # Images, logos, etc. <br/>
+│   ├── components/   &emsp;-      # Reusable UI components like Navbar, Banner, etc. <br/>
+│   ├── pages/   &emsp;-           # Main pages (e.g., Home.tsx, Browse.tsx) <br/>
+│   ├── App.tsx     &emsp;-       # Main App component with routes <br/>
+│   ├── main.tsx    &emsp;-       # Entry point (used by Vite) <br/>
+│   └── index.css &emsp;-          # Global styles + Tailwind directives <br/>
+│ <br/>
+├── tailwind.config.js    &emsp;-  # Tailwind CSS config <br/>
+├── tsconfig.json    &emsp;-       # TypeScript config <br/>
+├── package.json <br/>
+└── README.md <br/>
+
+
+# Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
