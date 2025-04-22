@@ -1,33 +1,25 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import background from "../assets/images/EKn3yBvU8AM_Dd8.jpg";
 import "../styles/global.css";
 import { Started } from "./started";
+
 export const SideScroll = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
     const [modalContent, setModalContent] = useState<number | null>(null);
+    const modalRef = useRef<HTMLDialogElement>(null);
 
     const right_to_l = () => {
-        const container = document.querySelector(
-            ".hide-scrollbar"
-        ) as HTMLElement;
+        const container = document.querySelector(".hide-scrollbar") as HTMLElement;
         container.scrollBy({ left: -400, behavior: "smooth" });
     };
 
     const left_to_r = () => {
-        const container = document.querySelector(
-            ".hide-scrollbar"
-        ) as HTMLElement;
+        const container = document.querySelector(".hide-scrollbar") as HTMLElement;
         container.scrollBy({ left: 400, behavior: "smooth" });
     };
 
     const openModal = (item: number) => {
         setModalContent(item);
-        setIsModalOpen(true);
-    };
-
-    const closeModal = () => {
-        setIsModalOpen(false);
-        setModalContent(null);
+        modalRef.current?.showModal();
     };
 
     return (
@@ -65,35 +57,26 @@ export const SideScroll = () => {
                 </div>
             </div>
 
-            {isModalOpen && (
-                <div
-                    className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
-                    onClick={closeModal}
-                >
-                    <div
-                        className="bg-black/80 text-white p-6 rounded-lg relative max-w-2xl w-full"
-                        onClick={(e) => e.stopPropagation()}
-                    >
-                        <button
-                            className="absolute top-4 right-4 text-3xl font-bold"
-                            onClick={closeModal}
-                        >
-                            X
+            <dialog id="image_modal" ref={modalRef} className="modal">
+                <div className="modal-box bg-black text-white max-w-2xl w-full relative">
+                    <form method="dialog">
+                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-white text-2xl">
+                            ✕
                         </button>
-                        <h2 className="text-2xl font-bold  mb-4">Image #{modalContent}</h2>
-                        <img
-                            src={background}
-                            alt={`Trending #${modalContent}`}
-                            className="w-full h-80 object-cover rounded-lg"
-                        />
-                        <p className="mt-4">
-                            This is the detailed content for Image #{modalContent}. You can
-                            add more content here like a description or related information.
-                        </p>
-                        <Started />
-                    </div>
+                    </form>
+                    <h2 className="text-2xl font-bold mb-4">Image #{modalContent}</h2>
+                    <img
+                        src={background}
+                        alt={`Trending #${modalContent}`}
+                        className="w-full h-80 object-cover rounded-lg"
+                    />
+                    <p className="mt-4">
+                        This is the detailed content for Image #{modalContent}. You can
+                        add more content here like a description or related information.
+                    </p>
+                    <Started />
                 </div>
-            )}
+            </dialog>
         </div>
     );
 };
