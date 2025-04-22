@@ -1,8 +1,4 @@
-import { useState } from 'react';
-
 export const Question = () => {
-    const [expanded, setExpanded] = useState(null);
-
     const faqs = [
         {
             question: "What is Netflix?",
@@ -36,32 +32,25 @@ Kids profiles come with PIN-protected parental controls that let you restrict th
         }
     ];
 
-    const toggleAnswer = (index: any) => {
-        setExpanded(expanded === index ? null : index); 
-    };
-
     return (
         <div className="text-white font-bold px-4 sm:px-8 md:px-12 py-6 sm:py-10 text-2xl sm:text-3xl md:text-4xl">
             Frequently Asked Questions
-            <div className="mt-6 flex flex-col gap-4 sm:gap-6">
+            <div className="mt-6 flex flex-col gap-4 sm:gap-6 text-base-content">
                 {faqs.map((faq, index) => (
-                    <div key={index}>
-                        <button
-                            onClick={() => toggleAnswer(index)} 
-                            className="bg-black/50 rounded-xl sm:rounded-2xl w-full px-4 sm:px-6 py-4 sm:py-6 text-left flex justify-between items-center text-lg sm:text-xl hover:bg-white/20 transition duration-300 ease-in-out"
-                        >
-                            <span className="flex-1">{faq.question}</span>
-                            <span className="text-3xl sm:text-4xl font-thin ml-4">{expanded === index ? "X" : "+"}</span> 
-                        </button>
-                        {expanded === index && (
-                            <div className="bg-black/40 text-sm sm:text-base p-4 rounded-xl mt-2">
-                                {faq.answer}
-                            </div>
-                        )}
+                    <div
+                        key={index}
+                        className=" bg-black/50 collapse collapse-plus border border-base-300"
+                    >
+                        <input type="radio" name="faq-accordion" defaultChecked={index === 0} />
+                        <div className="collapse-title font-semibold text-lg sm:text-xl">
+                            {faq.question}
+                        </div>
+                        <div className="collapse-content text-sm whitespace-pre-line">
+                            {faq.answer}
+                        </div>
                     </div>
                 ))}
             </div>
         </div>
     );
 };
-
